@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="MobilemateWindow" parent="GtkApplicationWindow">
+    <property name="default-width">600</property>
+    <property name="default-height">300</property>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="headerBar">
+        <property name="visible">True</property>
+        <property name="show-close-button">True</property>
+        <property name="title">Hello, World!</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkNotebook" id="notebookMain">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkLabel" id="notebookContentQuickAccess">
+            <property name="label">Content</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkGrid" id="gridQuickAccess">
+            <property name="visible">True</property>
+            <child>
+              <object id="buttonHome" class="GtkButton">
+                <property name="visible">True</property>
+                <property name="label">Home</property>
+                <property name="width_request">250</property>
+                <property name="height_request">120</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object id="buttonOffice" class="GtkButton">
+                <property name="visible">True</property>
+                <property name="label">Home</property>
+                <property name="width_request">250</property>
+                <property name="height_request">120</property>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object id="buttonOnTheRoad" class="GtkButton">
+                <property name="visible">True</property>
+                <property name="label">Mobile</property>
+                <property name="width_request">250</property>
+                <property name="height_request">120</property>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object id="buttonPresentation" class="GtkButton">
+                <property name="visible">True</property>
+                <property name="label">Presentation</property>
+                <property name="width_request">250</property>
+                <property name="height_request">120</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object id="buttonMaximumPowerSave" class="GtkButton">
+                <property name="visible">True</property>
+                <property name="label">Maximum powersaving</property>
+                <property name="width_request">250</property>
+                <property name="height_request">120</property>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object id="buttonSettings" class="GtkButton">
+                <property name="visible">True</property>
+                <property name="label">Settings</property>
+                <property name="width_request">250</property>
+                <property name="height_request">120</property>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel" id="notebookTabQuickAccess">
+            <property name="visible">True</property>
+            <property name="label">Quick access</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkGrid" id="preferencesGrid">
+            <property name="visible">True</property>
+            <child>
+              <object id="gridPreferencesBrightnessContainer" class="GtkGrid">
+                <property name="visible">True</property>
+                <child>
+                  <object id="gridPreferencesBrightnessDescription" class="GtkGrid">
+                    <property name="visible">True</property>
+                    <child>
+                      <object id="iconBrightness" class="GtkImage">
+                        <property name="visible">True</property>
+                        <property name="pixbuf">screen.png</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object id="labelBrightness" class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="label">Display brightness</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left-attach">0</property>
+                    <property name="top-attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                <object id="gridPreferencesBrightnessControls" class="GtkGrid">
+                  <property name="visible">True</property>
+                  <child>
+                    <object id="sliderBrightness" class="GtkHScale">
+                      <property name="visible">True</property>
+                    </object>
+                    <packing>
+                      <property name="left-attach">0</property>
+                      <property name="top-attach">0</property>
+                    </packing>
+                  </child>
+                </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object id="gridPreferencesBatteryContainer" class="GtkGrid">
+                <property name="visible">True</property>
+                <child>
+                  <object id="gridPreferencesBatteryDescription" class="GtkGrid">
+                    <property name="visible">True</property>
+                    <child>
+                      <object id="iconBattery" class="GtkImage">
+                        <property name="visible">True</property>
+                        <property name="pixbuf">battery.png</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object id="labelBattery" class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="label">Battery</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left-attach">0</property>
+                    <property name="top-attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                <object id="gridPreferencesBatteryControls" class="GtkGrid">
+                  <property name="visible">True</property>
+                  <child>
+                    <object id="comboBoxBatteryMode" class="GtkComboBox">
+                      <property name="visible">True</property>
+                    </object>
+                    <packing>
+                      <property name="left-attach">0</property>
+                      <property name="top-attach">0</property>
+                    </packing>
+                  </child>
+                </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object id="gridPreferencesWifiContainer" class="GtkGrid">
+                <property name="visible">True</property>
+                <child>
+                  <object id="gridPreferencesWifiDescription" class="GtkGrid">
+                    <property name="visible">True</property>
+                    <child>
+                      <object id="iconWifi" class="GtkImage">
+                        <property name="visible">True</property>
+                        <property name="pixbuf">wifi.png</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object id="labelWifi" class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="label">Wifi</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left-attach">0</property>
+                    <property name="top-attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                <object id="gridPreferencesWifiControls" class="GtkGrid">
+                  <property name="visible">True</property>
+                  <child>
+                    <object id="buttonWifiConnect" class="GtkComboBox">
+                      <property name="visible">True</property>
+                    </object>
+                    <packing>
+                      <property name="left-attach">0</property>
+                      <property name="top-attach">0</property>
+                    </packing>
+                  </child>
+                </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object id="gridPreferencesScreenModeContainer" class="GtkGrid">
+                <property name="visible">True</property>
+                <child>
+                  <object id="gridPreferencesScreenModeDescription" class="GtkGrid">
+                    <property name="visible">True</property>
+                    <child>
+                      <object id="iconScreenMode" class="GtkImage">
+                        <property name="visible">True</property>
+                        <property name="pixbuf">screenmode.png</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object id="labelScreenMode" class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="label">Screenmode</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left-attach">0</property>
+                    <property name="top-attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                <object id="gridPreferencesScreenModeControls" class="GtkGrid">
+                  <property name="visible">True</property>
+                  <child>
+                    <object id="comboBoxScreenMode" class="GtkComboBox">
+                      <property name="visible">True</property>
+                    </object>
+                    <packing>
+                      <property name="left-attach">0</property>
+                      <property name="top-attach">0</property>
+                    </packing>
+                  </child>
+                </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object id="gridPreferencesSoundContainer" class="GtkGrid">
+                <property name="visible">True</property>
+                <child>
+                  <object id="gridPreferencesSoundDescription" class="GtkGrid">
+                    <property name="visible">True</property>
+                    <child>
+                      <object id="iconSound" class="GtkImage">
+                        <property name="visible">True</property>
+                        <property name="pixbuf">sound.png</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object id="labelSound" class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="label">Sound</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left-attach">0</property>
+                    <property name="top-attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                <object id="gridPreferencesSoundControls" class="GtkGrid">
+                  <property name="visible">True</property>
+                  <child>
+                    <object id="sliderSound" class="GtkHScale">
+                      <property name="visible">True</property>
+                    </object>
+                    <packing>
+                      <property name="left-attach">0</property>
+                      <property name="top-attach">0</property>
+                    </packing>
+                  </child>
+                </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel" id="notebookTabPreferences">
+            <property name="visible">True</property>
+            <property name="label">Preferences</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>
