@@ -18,6 +18,7 @@
             <property name="label">Content</property>
           </object>
         </child>
+        <!-- Tabpage 1 content -->
         <child>
           <object class="GtkGrid" id="gridQuickAccess">
             <property name="visible">True</property>
@@ -95,18 +96,23 @@
             </child>
           </object>
         </child>
+        <!-- End tabpage 1 content -->
         <child type="tab">
           <object class="GtkLabel" id="notebookTabQuickAccess">
             <property name="visible">True</property>
             <property name="label">Quick access</property>
           </object>
         </child>
+        <!-- Tabpage 2 content -->
         <child>
           <object class="GtkGrid" id="preferencesGrid">
             <property name="visible">True</property>
             <child>
+              <!-- gridPreferencesBrightnessContainer -->
               <object id="gridPreferencesBrightnessContainer" class="GtkGrid">
                 <property name="visible">True</property>
+                <property name="width_request">200</property>
+                <property name="height_request">120</property>
                 <child>
                   <object id="gridPreferencesBrightnessDescription" class="GtkGrid">
                     <property name="visible">True</property>
@@ -155,13 +161,17 @@
                 <property name="left-attach">0</property>
                 <property name="top-attach">0</property>
               </packing>
+              <!-- end gridPreferencesBrightnessContainer -->
             </child>
             <child>
+              <!-- gridPreferencesBatteryContainer -->
               <object id="gridPreferencesBatteryContainer" class="GtkGrid">
                 <property name="visible">True</property>
                 <child>
                   <object id="gridPreferencesBatteryDescription" class="GtkGrid">
                     <property name="visible">True</property>
+                    <property name="width_request">200</property>
+                    <property name="height_request">120</property>
                     <child>
                       <object id="iconBattery" class="GtkImage">
                         <property name="visible">True</property>
@@ -207,10 +217,14 @@
                 <property name="left-attach">1</property>
                 <property name="top-attach">0</property>
               </packing>
+              <!-- end gridPreferencesBatteryContainer -->
             </child>
             <child>
+              <!-- gridPreferencesWifiContainer -->
               <object id="gridPreferencesWifiContainer" class="GtkGrid">
                 <property name="visible">True</property>
+                <property name="width_request">200</property>
+                <property name="height_request">120</property>
                 <child>
                   <object id="gridPreferencesWifiDescription" class="GtkGrid">
                     <property name="visible">True</property>
@@ -259,10 +273,14 @@
                 <property name="left-attach">2</property>
                 <property name="top-attach">0</property>
               </packing>
+              <!-- gridPreferencesWifiContainer -->
             </child>
             <child>
+              <!-- gridPreferencesScreenModeContainer -->
               <object id="gridPreferencesScreenModeContainer" class="GtkGrid">
                 <property name="visible">True</property>
+                <property name="width_request">200</property>
+                <property name="height_request">120</property>
                 <child>
                   <object id="gridPreferencesScreenModeDescription" class="GtkGrid">
                     <property name="visible">True</property>
@@ -311,11 +329,16 @@
                 <property name="left-attach">3</property>
                 <property name="top-attach">0</property>
               </packing>
+              <!-- end gridPreferencesScreenModeContainer -->
             </child>
             <child>
+              <!-- gridPreferencesSoundContainer -->
               <object id="gridPreferencesSoundContainer" class="GtkGrid">
                 <property name="visible">True</property>
+                <property name="width_request">200</property>
+                <property name="height_request">120</property>
                 <child>
+                  <!-- gridPreferencesSoundDescription -->
                   <object id="gridPreferencesSoundDescription" class="GtkGrid">
                     <property name="visible">True</property>
                     <child>
@@ -343,6 +366,7 @@
                     <property name="left-attach">0</property>
                     <property name="top-attach">0</property>
                   </packing>
+                  <!-- end gridPreferencesSoundDescription -->
                 </child>
                 <child>
                 <object id="gridPreferencesSoundControls" class="GtkGrid">
@@ -363,9 +387,11 @@
                 <property name="left-attach">0</property>
                 <property name="top-attach">1</property>
               </packing>
+              <!-- end gridPreferencesSoundContainer -->
             </child>
           </object>
         </child>
+        <!-- End tabpage 2 content -->
         <child type="tab">
           <object class="GtkLabel" id="notebookTabPreferences">
             <property name="visible">True</property>
