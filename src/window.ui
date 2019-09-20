@@ -114,8 +114,13 @@
                 <property name="width_request">200</property>
                 <property name="height_request">120</property>
                 <child>
+                  <!-- gridPreferencesBrightnessDescription -->
                   <object id="gridPreferencesBrightnessDescription" class="GtkGrid">
                     <property name="visible">True</property>
+                    <property name="halign">center</property>
+                    <property name="hexpand">True</property>
+                    <property name="margin_top">10</property>
+                    <property name="height_request">30</property>
                     <child>
                       <object id="iconBrightness" class="GtkImage">
                         <property name="visible">True</property>
@@ -141,6 +146,7 @@
                     <property name="left-attach">0</property>
                     <property name="top-attach">0</property>
                   </packing>
+                  <!-- End gridPreferencesBrightnessDescription -->
                 </child>
                 <child>
                 <object id="gridPreferencesBrightnessControls" class="GtkGrid">
@@ -148,6 +154,10 @@
                   <child>
                     <object id="sliderBrightness" class="GtkHScale">
                       <property name="visible">True</property>
+                      <property name="halign">center</property>
+                      <property name="hexpand">True</property>
+                      <property name="margin_top">10</property>
+                      <property name="height_request">30</property>
                     </object>
                     <packing>
                       <property name="left-attach">0</property>
@@ -155,6 +165,10 @@
                     </packing>
                   </child>
                 </object>
+                <packing>
+                  <property name="left-attach">0</property>
+                  <property name="top-attach">1</property>
+                </packing>
                 </child>
               </object>
               <packing>
@@ -167,11 +181,16 @@
               <!-- gridPreferencesBatteryContainer -->
               <object id="gridPreferencesBatteryContainer" class="GtkGrid">
                 <property name="visible">True</property>
+                <property name="width_request">200</property>
+                <property name="height_request">120</property>
                 <child>
+                  <!--  gridPreferencesBatteryDescription-->
                   <object id="gridPreferencesBatteryDescription" class="GtkGrid">
                     <property name="visible">True</property>
-                    <property name="width_request">200</property>
-                    <property name="height_request">120</property>
+                    <property name="halign">center</property>
+                    <property name="hexpand">True</property>
+                    <property name="margin_top">10</property>
+                    <property name="height_request">30</property>
                     <child>
                       <object id="iconBattery" class="GtkImage">
                         <property name="visible">True</property>
@@ -204,6 +223,10 @@
                   <child>
                     <object id="comboBoxBatteryMode" class="GtkComboBox">
                       <property name="visible">True</property>
+                      <property name="halign">center</property>
+                      <property name="hexpand">True</property>
+                      <property name="margin_top">10</property>
+                      <property name="height_request">30</property>
                     </object>
                     <packing>
                       <property name="left-attach">0</property>
@@ -211,6 +234,10 @@
                     </packing>
                   </child>
                 </object>
+                <packing>
+                  <property name="left-attach">0</property>
+                  <property name="top-attach">1</property>
+                </packing>
                 </child>
               </object>
               <packing>
@@ -226,8 +253,13 @@
                 <property name="width_request">200</property>
                 <property name="height_request">120</property>
                 <child>
+                  <!-- gridPreferencesWifiDescription -->
                   <object id="gridPreferencesWifiDescription" class="GtkGrid">
                     <property name="visible">True</property>
+                    <property name="halign">center</property>
+                    <property name="hexpand">True</property>
+                    <property name="margin_top">10</property>
+                    <property name="height_request">30</property>
                     <child>
                       <object id="iconWifi" class="GtkImage">
                         <property name="visible">True</property>
@@ -253,6 +285,7 @@
                     <property name="left-attach">0</property>
                     <property name="top-attach">0</property>
                   </packing>
+                  <!-- End gridPreferencesWifiDescription -->
                 </child>
                 <child>
                 <object id="gridPreferencesWifiControls" class="GtkGrid">
@@ -260,6 +293,10 @@
                   <child>
                     <object id="buttonWifiConnect" class="GtkComboBox">
                       <property name="visible">True</property>
+                      <property name="halign">center</property>
+                      <property name="hexpand">True</property>
+                      <property name="margin_top">10</property>
+                      <property name="height_request">30</property>
                     </object>
                     <packing>
                       <property name="left-attach">0</property>
@@ -267,13 +304,17 @@
                     </packing>
                   </child>
                 </object>
+                <packing>
+                  <property name="left-attach">0</property>
+                  <property name="top-attach">1</property>
+                </packing>
                 </child>
               </object>
               <packing>
                 <property name="left-attach">2</property>
                 <property name="top-attach">0</property>
               </packing>
-              <!-- gridPreferencesWifiContainer -->
+              <!-- End gridPreferencesWifiContainer -->
             </child>
             <child>
               <!-- gridPreferencesScreenModeContainer -->
@@ -282,8 +323,13 @@
                 <property name="width_request">200</property>
                 <property name="height_request">120</property>
                 <child>
+                  <!-- gridPreferencesScreenModeDescription -->
                   <object id="gridPreferencesScreenModeDescription" class="GtkGrid">
                     <property name="visible">True</property>
+                    <property name="halign">center</property>
+                    <property name="hexpand">True</property>
+                    <property name="margin_top">10</property>
+                    <property name="height_request">30</property>
                     <child>
                       <object id="iconScreenMode" class="GtkImage">
                         <property name="visible">True</property>
@@ -309,6 +355,7 @@
                     <property name="left-attach">0</property>
                     <property name="top-attach">0</property>
                   </packing>
+                  <!-- End -->
                 </child>
                 <child>
                 <object id="gridPreferencesScreenModeControls" class="GtkGrid">
@@ -316,6 +363,10 @@
                   <child>
                     <object id="comboBoxScreenMode" class="GtkComboBox">
                       <property name="visible">True</property>
+                      <property name="halign">center</property>
+                      <property name="hexpand">True</property>
+                      <property name="margin_top">10</property>
+                      <property name="height_request">30</property>
                     </object>
                     <packing>
                       <property name="left-attach">0</property>
@@ -323,6 +374,10 @@
                     </packing>
                   </child>
                 </object>
+                <packing>
+                  <property name="left-attach">0</property>
+                  <property name="top-attach">1</property>
+                </packing>
                 </child>
               </object>
               <packing>
@@ -341,6 +396,10 @@
                   <!-- gridPreferencesSoundDescription -->
                   <object id="gridPreferencesSoundDescription" class="GtkGrid">
                     <property name="visible">True</property>
+                    <property name="halign">center</property>
+                    <property name="hexpand">True</property>
+                    <property name="margin_top">10</property>
+                    <property name="height_request">30</property>
                     <child>
                       <object id="iconSound" class="GtkImage">
                         <property name="visible">True</property>
@@ -373,7 +432,11 @@
                   <property name="visible">True</property>
                   <child>
                     <object id="sliderSound" class="GtkHScale">
-                      <property name="visible">True</property>
+                    <property name="visible">True</property>  
+                    <property name="halign">center</property>
+                    <property name="hexpand">True</property>
+                    <property name="margin_top">10</property>
+                    <property name="height_request">30</property>
                     </object>
                     <packing>
                       <property name="left-attach">0</property>
@@ -381,6 +444,10 @@
                     </packing>
                   </child>
                 </object>
+                <packing>
+                  <property name="left-attach">0</property>
+                  <property name="top-attach">1</property>
+                </packing>
                 </child>
               </object>
               <packing>
