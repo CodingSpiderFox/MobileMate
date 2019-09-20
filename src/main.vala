@@ -17,7 +17,7 @@
  */
 
 int main (string[] args) {
-	var app = new Gtk.Application ("org.gnome.Mobilemate", ApplicationFlags.FLAGS_NONE);
+	var app = new Gtk.Application ("org.codingspiderfox.Mobilemate", ApplicationFlags.FLAGS_NONE);
 	app.activate.connect (() => {
 		var win = app.active_window;
 		if (win == null) {

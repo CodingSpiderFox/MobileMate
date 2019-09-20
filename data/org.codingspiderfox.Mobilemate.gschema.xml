@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="mobilemate">
-	<schema id="org.gnome.Mobilemate" path="/org/gnome/Mobilemate/">
+	<schema id="org.codingspiderfox.Mobilemate" path="/org/codingspiderfox/Mobilemate/">
 	</schema>
 </schemalist>

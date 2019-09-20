@@ -1,5 +1,5 @@
 {
-    "app-id" : "org.gnome.Mobilemate",
+    "app-id" : "org.codingspiderfox.Mobilemate",
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "3.28",
     "sdk" : "org.gnome.Sdk",

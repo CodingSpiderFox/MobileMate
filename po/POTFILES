@@ -1,5 +1,5 @@
-data/org.gnome.Mobilemate.desktop.in
-data/org.gnome.Mobilemate.appdata.xml.in
-data/org.gnome.Mobilemate.gschema.xml
+data/org.codingspiderfox.Mobilemate.desktop.in
+data/org.codingspiderfox.Mobilemate.appdata.xml.in
+data/org.codingspiderfox.Mobilemate.gschema.xml
 src/window.uisrc/main.vala
 src/window.vala

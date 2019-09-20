@@ -17,7 +17,7 @@
  */
 
 namespace Mobilemate {
-	[GtkTemplate (ui = "/org/gnome/Mobilemate/window.ui")]
+	[GtkTemplate (ui = "/org/codingspiderfox/Mobilemate/window.ui")]
 	public class Window : Gtk.ApplicationWindow {
 		[GtkChild]
 		Gtk.Grid gridQuickAccess;
