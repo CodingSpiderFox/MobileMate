@@ -153,11 +153,18 @@
                   <property name="visible">True</property>
                   <child>
                     <object id="sliderBrightness" class="GtkHScale">
-                      <property name="visible">True</property>
-                      <property name="halign">center</property>
-                      <property name="hexpand">True</property>
-                      <property name="margin_top">10</property>
                       <property name="height_request">30</property>
+                      <property name="visible">True</property>
+                      <property name="can_focus">True</property>
+                      <property name="margin_left">10</property>
+                      <property name="margin_right">10</property>
+                      <property name="margin_top">10</property>
+                      <property name="hexpand">True</property>
+                      <property name="inverted">True</property>
+                      <property name="lower_stepper_sensitivity">on</property>
+                      <property name="upper_stepper_sensitivity">on</property>
+                      <property name="show_fill_level">True</property>
+                      <property name="draw_value">False</property>
                     </object>
                     <packing>
                       <property name="left-attach">0</property>
@@ -178,21 +185,21 @@
               <!-- end gridPreferencesBrightnessContainer -->
             </child>
             <child>
-              <!-- gridPreferencesBatteryContainer -->
-              <object id="gridPreferencesBatteryContainer" class="GtkGrid">
+              <!-- gridPreferencesPowerModeContainer -->
+              <object id="gridPreferencesPowerModeContainer" class="GtkGrid">
                 <property name="visible">True</property>
                 <property name="width_request">200</property>
                 <property name="height_request">120</property>
                 <child>
-                  <!--  gridPreferencesBatteryDescription-->
-                  <object id="gridPreferencesBatteryDescription" class="GtkGrid">
+                  <!--  gridPreferencesPowerModeDescription-->
+                  <object id="gridPreferencesPowerModeDescription" class="GtkGrid">
                     <property name="visible">True</property>
                     <property name="halign">center</property>
                     <property name="hexpand">True</property>
                     <property name="margin_top">10</property>
                     <property name="height_request">30</property>
                     <child>
-                      <object id="iconBattery" class="GtkImage">
+                      <object id="iconPowerMode" class="GtkImage">
                         <property name="visible">True</property>
                         <property name="pixbuf">battery.png</property>
                       </object>
@@ -202,9 +209,9 @@
                       </packing>
                     </child>
                     <child>
-                      <object id="labelBattery" class="GtkLabel">
+                      <object id="labelPowerMode" class="GtkLabel">
                         <property name="visible">True</property>
-                        <property name="label">Battery</property>
+                        <property name="label">Power mode</property>
                       </object>
                       <packing>
                         <property name="left-attach">1</property>
@@ -218,15 +225,17 @@
                   </packing>
                 </child>
                 <child>
-                <object id="gridPreferencesBatteryControls" class="GtkGrid">
+                <object id="gridPreferencesPowerModeControls" class="GtkGrid">
                   <property name="visible">True</property>
                   <child>
-                    <object id="comboBoxBatteryMode" class="GtkComboBox">
-                      <property name="visible">True</property>
-                      <property name="halign">center</property>
-                      <property name="hexpand">True</property>
-                      <property name="margin_top">10</property>
+                    <object id="comboBoxPowerModeMode" class="GtkComboBox">
                       <property name="height_request">30</property>
+                      <property name="visible">True</property>
+                      <property name="can_focus">False</property>
+                      <property name="margin_left">10</property>
+                      <property name="margin_right">10</property>
+                      <property name="margin_top">10</property>
+                      <property name="hexpand">True</property>
                     </object>
                     <packing>
                       <property name="left-attach">0</property>
@@ -244,7 +253,7 @@
                 <property name="left-attach">1</property>
                 <property name="top-attach">0</property>
               </packing>
-              <!-- end gridPreferencesBatteryContainer -->
+              <!-- end gridPreferencesPowerModeContainer -->
             </child>
             <child>
               <!-- gridPreferencesWifiContainer -->
@@ -292,11 +301,13 @@
                   <property name="visible">True</property>
                   <child>
                     <object id="buttonWifiConnect" class="GtkComboBox">
-                      <property name="visible">True</property>
-                      <property name="halign">center</property>
-                      <property name="hexpand">True</property>
-                      <property name="margin_top">10</property>
                       <property name="height_request">30</property>
+                      <property name="visible">True</property>
+                      <property name="can_focus">False</property>
+                      <property name="margin_left">10</property>
+                      <property name="margin_right">10</property>
+                      <property name="margin_top">10</property>
+                      <property name="hexpand">True</property>
                     </object>
                     <packing>
                       <property name="left-attach">0</property>
@@ -362,11 +373,13 @@
                   <property name="visible">True</property>
                   <child>
                     <object id="comboBoxScreenMode" class="GtkComboBox">
-                      <property name="visible">True</property>
-                      <property name="halign">center</property>
-                      <property name="hexpand">True</property>
-                      <property name="margin_top">10</property>
                       <property name="height_request">30</property>
+                      <property name="visible">True</property>
+                      <property name="can_focus">False</property>
+                      <property name="margin_left">10</property>
+                      <property name="margin_right">10</property>
+                      <property name="margin_top">10</property>
+                      <property name="hexpand">True</property>
                     </object>
                     <packing>
                       <property name="left-attach">0</property>
@@ -432,11 +445,18 @@
                   <property name="visible">True</property>
                   <child>
                     <object id="sliderSound" class="GtkHScale">
-                    <property name="visible">True</property>  
-                    <property name="halign">center</property>
-                    <property name="hexpand">True</property>
-                    <property name="margin_top">10</property>
-                    <property name="height_request">30</property>
+                      <property name="height_request">30</property>
+                      <property name="visible">True</property>
+                      <property name="can_focus">True</property>
+                      <property name="margin_left">10</property>
+                      <property name="margin_right">10</property>
+                      <property name="margin_top">10</property>
+                      <property name="hexpand">True</property>
+                      <property name="inverted">True</property>
+                      <property name="lower_stepper_sensitivity">on</property>
+                      <property name="upper_stepper_sensitivity">on</property>
+                      <property name="show_fill_level">True</property>
+                      <property name="draw_value">False</property>
                     </object>
                     <packing>
                       <property name="left-attach">0</property>
