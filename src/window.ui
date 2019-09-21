@@ -473,6 +473,11 @@
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="margin_right">2</property>
+                        <property name="margin_top">5</property>
+                        <property name="margin_bottom">5</property>
+                        <style>
+                          <class name="destructive-action"/>
+                        </style>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -490,6 +495,9 @@
                         <property name="margin_right">5</property>
                         <property name="margin_top">5</property>
                         <property name="margin_bottom">5</property>
+                        <style>
+                          <class name="suggested-action"/>
+                        </style>
                       </object>
                       <packing>
                         <property name="expand">False</property>
