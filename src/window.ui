@@ -23,11 +23,60 @@
           <object class="GtkGrid" id="gridQuickAccess">
             <property name="visible">True</property>
             <child>
-              <object id="buttonHome" class="GtkButton">
+              <object class="GtkGrid" id="gridHomeArea">
                 <property name="visible">True</property>
-                <property name="label">Home</property>
-                <property name="width_request">250</property>
-                <property name="height_request">120</property>
+                <property name="can_focus">False</property>
+                <child>
+                  <object id="buttonHome" class="GtkButton">
+                    <property name="visible">True</property>
+                    <property name="label">Home</property>
+                    <property name="width_request">250</property>
+                    <property name="height_request">120</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">end</property>
+                    <child>
+                      <object class="GtkButton" id="buttonScheduleHome">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="image">image1</property>
+                        <property name="use_underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="buttonSettingsHome">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="image">image1</property>
+                        <property name="use_underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">1</property>
+                  </packing>
+                </child>
               </object>
               <packing>
                 <property name="left-attach">0</property>
@@ -35,11 +84,60 @@
               </packing>
             </child>
             <child>
-              <object id="buttonOffice" class="GtkButton">
+              <object class="GtkGrid" id="gridOfficeArea">
                 <property name="visible">True</property>
-                <property name="label">Home</property>
-                <property name="width_request">250</property>
-                <property name="height_request">120</property>
+                <property name="can_focus">False</property>
+                <child>
+                  <object id="buttonOffice" class="GtkButton">
+                    <property name="visible">True</property>
+                    <property name="label">Office</property>
+                    <property name="width_request">250</property>
+                    <property name="height_request">120</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">end</property>
+                    <child>
+                      <object class="GtkButton" id="buttonScheduleOffice">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="image">image1</property>
+                        <property name="use_underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="buttonSettingsOffice">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="image">image1</property>
+                        <property name="use_underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">1</property>
+                  </packing>
+                </child>
               </object>
               <packing>
                 <property name="left-attach">1</property>
@@ -47,11 +145,60 @@
               </packing>
             </child>
             <child>
-              <object id="buttonOnTheRoad" class="GtkButton">
+              <object class="GtkGrid" id="gridOnTheRoadArea">
                 <property name="visible">True</property>
-                <property name="label">Mobile</property>
-                <property name="width_request">250</property>
-                <property name="height_request">120</property>
+                <property name="can_focus">False</property>
+                <child>
+                  <object id="buttonOnTheRoad" class="GtkButton">
+                    <property name="visible">True</property>
+                    <property name="label">On the road</property>
+                    <property name="width_request">250</property>
+                    <property name="height_request">120</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">end</property>
+                    <child>
+                      <object class="GtkButton" id="buttonScheduleOnTheRoad">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="image">image1</property>
+                        <property name="use_underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="buttonSettingsOnTheRoad">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="image">image1</property>
+                        <property name="use_underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">1</property>
+                  </packing>
+                </child>
               </object>
               <packing>
                 <property name="left-attach">2</property>
@@ -59,11 +206,60 @@
               </packing>
             </child>
             <child>
-              <object id="buttonPresentation" class="GtkButton">
+              <object class="GtkGrid" id="gridPresentation">
                 <property name="visible">True</property>
-                <property name="label">Presentation</property>
-                <property name="width_request">250</property>
-                <property name="height_request">120</property>
+                <property name="can_focus">False</property>
+                <child>
+                  <object id="buttonPresentation" class="GtkButton">
+                    <property name="visible">True</property>
+                    <property name="label">Presentations</property>
+                    <property name="width_request">250</property>
+                    <property name="height_request">120</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">end</property>
+                    <child>
+                      <object class="GtkButton" id="buttonSchedulePresentation">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="image">image1</property>
+                        <property name="use_underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="buttonSettingsPresentation">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="image">image1</property>
+                        <property name="use_underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">1</property>
+                  </packing>
+                </child>
               </object>
               <packing>
                 <property name="left-attach">0</property>
@@ -71,11 +267,60 @@
               </packing>
             </child>
             <child>
-              <object id="buttonMaximumPowerSave" class="GtkButton">
+              <object class="GtkGrid" id="gridMaximumPowerSave">
                 <property name="visible">True</property>
-                <property name="label">Maximum powersaving</property>
-                <property name="width_request">250</property>
-                <property name="height_request">120</property>
+                <property name="can_focus">False</property>
+                <child>
+                  <object id="buttonMaximumPowerSave" class="GtkButton">
+                    <property name="visible">True</property>
+                    <property name="label">Maximum power saving</property>
+                    <property name="width_request">250</property>
+                    <property name="height_request">120</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">end</property>
+                    <child>
+                      <object class="GtkButton" id="buttonScheduleMaximumPowerSave">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="image">image1</property>
+                        <property name="use_underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="buttonSettingsMaximumPowerSave">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="image">image1</property>
+                        <property name="use_underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">1</property>
+                  </packing>
+                </child>
               </object>
               <packing>
                 <property name="left-attach">1</property>
@@ -545,6 +790,22 @@
           <object class="GtkLabel" id="notebookTabPreferences">
             <property name="visible">True</property>
             <property name="label">Preferences</property>
+          </object>
+        </child>
+        <!-- Tabpage 3 content -->
+        <child>
+           <object id="buttonTest" class="GtkButton">
+            <property name="visible">True</property>
+            <property name="label">Test</property>
+            <property name="width_request">250</property>
+            <property name="height_request">120</property>
+          </object>
+        </child>
+        <!-- End tabpage 3 content -->
+        <child type="tab">
+          <object class="GtkLabel" id="notebookTabSchedule">
+            <property name="visible">True</property>
+            <property name="label">Scheduling</property>
           </object>
         </child>
       </object>
